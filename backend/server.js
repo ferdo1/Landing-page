@@ -12,7 +12,7 @@ require('dotenv').config();
    const app = express();
 
    // Middleware
-   app.use(cors({ origin: ['http://localhost:3000', 'http://127.0.0.1:5500'] }));
+   app.use(cors({ origin: ['http://localhost:3000', 'http://127.0.0.1:5500', 'https://landing-page-c5e0.onrender.com'] }));
    app.use(express.json());
    app.use(express.urlencoded({ extended: true }));
    app.use(express.static(path.join(__dirname, '..', 'frontend')));

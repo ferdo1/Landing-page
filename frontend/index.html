@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>30-Day Social Media Content Kit</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #f0f4f8;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #164e63;
+      color: white;
+      padding: 60px 40px;
+      border-radius: 20px;
+      margin-bottom: 50px;
+    }
+
+    .hero-text {
+      flex: 1;
+      padding-right: 20px;
+    }
+
+    .hero-text h1 {
+      font-size: 2.8rem;
+      margin-bottom: 20px;
+    }
+
+    .hero-text h2 {
+      font-size: 1.25rem;
+      font-weight: 400;
+      margin-bottom: 30px;
+    }
+
+    .cta-btn {
+      background: #facc15;
+      color: #000;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 50px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .cta-btn:hover {
+      background: #eab308;
+    }
+
+    .hero img {
+      flex: 1;
+      max-width: 400px;
+      border-radius: 15px;
+      height: auto;
+    }
+
+    /* Sections */
+    section {
+      margin: 40px 0;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    section h3, section h4 {
+      margin-bottom: 15px;
+      color: #164e63;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      margin: 10px 0;
+      font-size: 1rem;
+    }
+
+    ul li::before {
+      content: "✔ ";
+      color: #22c55e;
+      font-weight: bold;
+    }
+
+    /* Form */
+    .form-section {
+      text-align: center;
+    }
+
+    form {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    form input {
+      width: 80%;
+      max-width: 400px;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    form button {
+      width: 80%;
+      max-width: 400px;
+      margin-top: 15px;
+    }
+
+    .success {
+      margin-top: 15px;
+      color: green;
+      font-weight: bold;
+      display: none;
+    }
+
+    .error {
+      margin-top: 15px;
+      color: red;
+      font-weight: bold;
+      display: none;
+    }
+
+    footer {
+      margin: 50px 0 20px;
+      font-size: 0.9rem;
+      color: #666;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+      }
+
+      .hero-text {
+        padding-right: 0;
+        margin-bottom: 20px;
+      }
+
+      .hero img {
+        max-width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Hero -->
+    <div class="hero">
+      <div class="hero-text">
+        <h1>Grow Your Business with the 30-Day Social Media Content Kit</h1>
+        <h2>Get 30 days of ready-to-use captions, Canva templates & a content calendar to grow your business online.</h2>
+        <a href="#lead-form"><button class="cta-btn">📩 Yes! Send Me the Free Kit</button></a>
+      </div>
+      <img src="BRBjShcA8D4.jpg" alt="Marketing Image"> 
+    </div>
+
+    <!-- What’s Inside -->
+    <section>
+      <h3>What’s Inside the Kit:</h3>
+      <ul>
+        <li>📅 A plug-and-play 30-day content calendar</li>
+        <li>✍️ 60 pre-written captions for engagement & conversions</li>
+        <li>🎨 30 customizable Canva templates</li>
+        <li>🎯 A quick guide: How to turn followers into paying clients</li>
+      </ul>
+    </section>
+
+    <!-- Benefits -->
+    <section>
+      <h4>Benefits (Why It Matters)</h4>
+      <ul>
+        <li>Save hours of brainstorming and design</li>
+        <li>Instantly boost your social media engagement</li>
+        <li>Look like a pro (without hiring a designer)</li>
+        <li>Focus on growing your business, not content stress</li>
+      </ul>
+    </section>
+
+    <!-- Trust -->
+    <section>
+      <p>✅ Trusted by 100+ digital entrepreneurs</p>
+    </section>
+
+    <!-- Form -->
+    <section id="lead-form" class="form-section">
+      <h5>Ready to Grow Your Business with Done-for-You Content?</h5>
+      <form id="kitForm">
+        <input type="text" id="name" placeholder="Your Name (Optional)">
+        <input type="email" id="email" placeholder="Your Email (Required)" required>
+        <button type="submit" class="cta-btn">🚀 Send Me the Kit</button>
+      </form>
+      <p class="success" id="successMsg">✅ Thank you! Your free kit is on the way.</p>
+      <p class="error" id="errorMsg">❌ Something went wrong. Please try again.</p>
+    </section>
+
+    <footer>
+      <p>© 2025 Digital and Beyond | All Rights Reserved</p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("kitForm").addEventListener("submit", async function(e) {
+      e.preventDefault();
+
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const successMsg = document.getElementById("successMsg");
+      const errorMsg = document.getElementById("errorMsg");
+
+      if (email.trim() === "") {
+        errorMsg.textContent = "❌ Please enter your email.";
+        errorMsg.style.display = "block";
+        successMsg.style.display = "none";
+        return;
+      }
+
+      try {
+        const response = await fetch('http://localhost:3000/api/submit', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ name, email })
+        });
+
+        const result = await response.json();
+
+        if (response.ok) {
+          successMsg.style.display = "block";
+          errorMsg.style.display = "none";
+          document.getElementById("kitForm").reset();
+          console.log('Form submission successful:', result);
+        } else {
+          throw new Error(result.error || 'Failed to submit');
+        }
+      } catch (error) {
+        errorMsg.textContent = `❌ ${error.message || 'Something went wrong. Please try again.'}`;
+        errorMsg.style.display = "block";
+        successMsg.style.display = "none";
+        console.error('Form submission error:', error);
+      }
+    });
+  </script>
+</body>
+</html>
